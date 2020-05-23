@@ -3,27 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E93525A31609ECE47785FC4 /* Pods_Career_Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4516F8A18882B2B3D4025BB2 /* Pods_Career_Share.framework */; };
 		D811D7362442D34A0089F21F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D7352442D34A0089F21F /* AppDelegate.swift */; };
 		D811D7382442D34A0089F21F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D7372442D34A0089F21F /* SceneDelegate.swift */; };
-		D811D73A2442D34A0089F21F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D7392442D34A0089F21F /* ViewController.swift */; };
+		D811D73A2442D34A0089F21F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D7392442D34A0089F21F /* RegisterViewController.swift */; };
 		D811D73D2442D34A0089F21F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D811D73B2442D34A0089F21F /* Main.storyboard */; };
 		D811D73F2442D34F0089F21F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D811D73E2442D34F0089F21F /* Assets.xcassets */; };
 		D811D7422442D34F0089F21F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D811D7402442D34F0089F21F /* LaunchScreen.storyboard */; };
+		D811D74C2442F79D0089F21F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D74B2442F79D0089F21F /* HomeViewController.swift */; };
+		D811D750244323D70089F21F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D811D74F244323D70089F21F /* GoogleService-Info.plist */; };
+		D811D7522443281A0089F21F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D7512443281A0089F21F /* LoginViewController.swift */; };
+		D811D754244487460089F21F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D753244487460089F21F /* Company.swift */; };
+		D811D7592444A65C0089F21F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D7582444A65C0089F21F /* SearchViewController.swift */; };
+		D811D75B2444A6870089F21F /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D75A2444A6870089F21F /* QuestionViewController.swift */; };
+		D811D75D2444A6950089F21F /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D75C2444A6950089F21F /* MypageViewController.swift */; };
+		D811D75F24455BB20089F21F /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D75E24455BB20089F21F /* ReviewViewController.swift */; };
+		D811D761244705470089F21F /* CommentReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D760244705470089F21F /* CommentReviewViewController.swift */; };
+		D811D763244708210089F21F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D762244708210089F21F /* Review.swift */; };
+		D811D765244714CD0089F21F /* ReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D764244714CC0089F21F /* ReviewWriteViewController.swift */; };
+		D811D769244968910089F21F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D767244968910089F21F /* MessageCell.swift */; };
+		D811D76A244968910089F21F /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D811D768244968910089F21F /* MessageCell.xib */; };
+		D811D76C2449A7B60089F21F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811D76B2449A7B60089F21F /* Comment.swift */; };
+		D8CD3BB42472660A00DD8EA6 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD3BB22472660A00DD8EA6 /* ItemCollectionViewCell.swift */; };
+		D8CD3BB52472660A00DD8EA6 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CD3BB32472660A00DD8EA6 /* ItemCollectionViewCell.xib */; };
+		D8CD3BB7247277AB00DD8EA6 /* QuestionWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD3BB6247277AB00DD8EA6 /* QuestionWriteViewController.swift */; };
+		D8CD3BB92472785400DD8EA6 /* CommentQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD3BB82472785400DD8EA6 /* CommentQuestionViewController.swift */; };
+		D8CD3BBB2472798C00DD8EA6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD3BBA2472798C00DD8EA6 /* Question.swift */; };
+		D8CD3BBD2474FC4D00DD8EA6 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD3BBC2474FC4D00DD8EA6 /* ImageViewerViewController.swift */; };
+		D8CD3BC024791E3000DD8EA6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D8CD3BBF24791E3000DD8EA6 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4516F8A18882B2B3D4025BB2 /* Pods_Career_Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Career_Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81427350587F19787ADEAC19 /* Pods-Career Share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Career Share.debug.xcconfig"; path = "Target Support Files/Pods-Career Share/Pods-Career Share.debug.xcconfig"; sourceTree = "<group>"; };
+		B820A112F3FFD3C6594C029F /* Pods-Career Share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Career Share.release.xcconfig"; path = "Target Support Files/Pods-Career Share/Pods-Career Share.release.xcconfig"; sourceTree = "<group>"; };
 		D811D7322442D34A0089F21F /* Career Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Career Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D811D7352442D34A0089F21F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D811D7372442D34A0089F21F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D811D7392442D34A0089F21F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D811D7392442D34A0089F21F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D811D73C2442D34A0089F21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D811D73E2442D34F0089F21F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D811D7412442D34F0089F21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D811D7432442D34F0089F21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D811D74B2442F79D0089F21F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D811D74F244323D70089F21F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D811D7512443281A0089F21F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D811D753244487460089F21F /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		D811D7582444A65C0089F21F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D811D75A2444A6870089F21F /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		D811D75C2444A6950089F21F /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		D811D75E24455BB20089F21F /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		D811D760244705470089F21F /* CommentReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentReviewViewController.swift; sourceTree = "<group>"; };
+		D811D762244708210089F21F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		D811D764244714CC0089F21F /* ReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteViewController.swift; sourceTree = "<group>"; };
+		D811D766244947290089F21F /* Career Share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Career Share.entitlements"; sourceTree = "<group>"; };
+		D811D767244968910089F21F /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		D811D768244968910089F21F /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		D811D76B2449A7B60089F21F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		D8CD3BB22472660A00DD8EA6 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8CD3BB32472660A00DD8EA6 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8CD3BB6247277AB00DD8EA6 /* QuestionWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionWriteViewController.swift; sourceTree = "<group>"; };
+		D8CD3BB82472785400DD8EA6 /* CommentQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentQuestionViewController.swift; sourceTree = "<group>"; };
+		D8CD3BBA2472798C00DD8EA6 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D8CD3BBC2474FC4D00DD8EA6 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +77,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E93525A31609ECE47785FC4 /* Pods_Career_Share.framework in Frameworks */,
+				D8CD3BC024791E3000DD8EA6 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03B952076818DD7C4EC5944E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4516F8A18882B2B3D4025BB2 /* Pods_Career_Share.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33648BFBC3FB21D9C7EFDD30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81427350587F19787ADEAC19 /* Pods-Career Share.debug.xcconfig */,
+				B820A112F3FFD3C6594C029F /* Pods-Career Share.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D811D7292442D34A0089F21F = {
 			isa = PBXGroup;
 			children = (
 				D811D7342442D34A0089F21F /* Career Share */,
 				D811D7332442D34A0089F21F /* Products */,
+				33648BFBC3FB21D9C7EFDD30 /* Pods */,
+				03B952076818DD7C4EC5944E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +123,60 @@
 		D811D7342442D34A0089F21F /* Career Share */ = {
 			isa = PBXGroup;
 			children = (
+				D811D766244947290089F21F /* Career Share.entitlements */,
 				D811D7352442D34A0089F21F /* AppDelegate.swift */,
 				D811D7372442D34A0089F21F /* SceneDelegate.swift */,
-				D811D7392442D34A0089F21F /* ViewController.swift */,
-				D811D73B2442D34A0089F21F /* Main.storyboard */,
 				D811D73E2442D34F0089F21F /* Assets.xcassets */,
 				D811D7402442D34F0089F21F /* LaunchScreen.storyboard */,
 				D811D7432442D34F0089F21F /* Info.plist */,
+				D811D74F244323D70089F21F /* GoogleService-Info.plist */,
+				D811D7552444874D0089F21F /* Models */,
+				D811D74E2442F7E50089F21F /* Views */,
+				D811D74D2442F7C10089F21F /* Controllers */,
 			);
 			path = "Career Share";
+			sourceTree = "<group>";
+		};
+		D811D74D2442F7C10089F21F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D811D7392442D34A0089F21F /* RegisterViewController.swift */,
+				D811D74B2442F79D0089F21F /* HomeViewController.swift */,
+				D811D7512443281A0089F21F /* LoginViewController.swift */,
+				D811D7582444A65C0089F21F /* SearchViewController.swift */,
+				D811D75A2444A6870089F21F /* QuestionViewController.swift */,
+				D811D75C2444A6950089F21F /* MypageViewController.swift */,
+				D811D75E24455BB20089F21F /* ReviewViewController.swift */,
+				D811D760244705470089F21F /* CommentReviewViewController.swift */,
+				D811D764244714CC0089F21F /* ReviewWriteViewController.swift */,
+				D8CD3BB6247277AB00DD8EA6 /* QuestionWriteViewController.swift */,
+				D8CD3BB82472785400DD8EA6 /* CommentQuestionViewController.swift */,
+				D8CD3BBC2474FC4D00DD8EA6 /* ImageViewerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D811D74E2442F7E50089F21F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D811D73B2442D34A0089F21F /* Main.storyboard */,
+				D811D767244968910089F21F /* MessageCell.swift */,
+				D811D768244968910089F21F /* MessageCell.xib */,
+				D8CD3BB22472660A00DD8EA6 /* ItemCollectionViewCell.swift */,
+				D8CD3BB32472660A00DD8EA6 /* ItemCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D811D7552444874D0089F21F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D811D753244487460089F21F /* Company.swift */,
+				D811D762244708210089F21F /* Review.swift */,
+				D811D76B2449A7B60089F21F /* Comment.swift */,
+				D8CD3BBA2472798C00DD8EA6 /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +186,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D811D7462442D34F0089F21F /* Build configuration list for PBXNativeTarget "Career Share" */;
 			buildPhases = (
+				B651A894B7610E2521C3FE86 /* [CP] Check Pods Manifest.lock */,
 				D811D72E2442D34A0089F21F /* Sources */,
 				D811D72F2442D34A0089F21F /* Frameworks */,
 				D811D7302442D34A0089F21F /* Resources */,
+				1B29E87CF220F920520906EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Career Share";
+			packageProductDependencies = (
+				D8CD3BBF24791E3000DD8EA6 /* IQKeyboardManagerSwift */,
+			);
 			productName = "Career Share";
 			productReference = D811D7322442D34A0089F21F /* Career Share.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +228,9 @@
 				Base,
 			);
 			mainGroup = D811D7292442D34A0089F21F;
+			packageReferences = (
+				D8CD3BBE24791E2F00DD8EA6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = D811D7332442D34A0089F21F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D811D76A244968910089F21F /* MessageCell.xib in Resources */,
 				D811D7422442D34F0089F21F /* LaunchScreen.storyboard in Resources */,
+				D811D750244323D70089F21F /* GoogleService-Info.plist in Resources */,
+				D8CD3BB52472660A00DD8EA6 /* ItemCollectionViewCell.xib in Resources */,
 				D811D73F2442D34F0089F21F /* Assets.xcassets in Resources */,
 				D811D73D2442D34A0089F21F /* Main.storyboard in Resources */,
 			);
@@ -133,14 +256,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B29E87CF220F920520906EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Career Share/Pods-Career Share-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Career Share/Pods-Career Share-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Career Share/Pods-Career Share-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B651A894B7610E2521C3FE86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Career Share-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D811D72E2442D34A0089F21F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D811D73A2442D34A0089F21F /* ViewController.swift in Sources */,
+				D811D75D2444A6950089F21F /* MypageViewController.swift in Sources */,
+				D811D73A2442D34A0089F21F /* RegisterViewController.swift in Sources */,
+				D811D75F24455BB20089F21F /* ReviewViewController.swift in Sources */,
+				D811D7592444A65C0089F21F /* SearchViewController.swift in Sources */,
 				D811D7362442D34A0089F21F /* AppDelegate.swift in Sources */,
+				D811D763244708210089F21F /* Review.swift in Sources */,
 				D811D7382442D34A0089F21F /* SceneDelegate.swift in Sources */,
+				D811D7522443281A0089F21F /* LoginViewController.swift in Sources */,
+				D811D74C2442F79D0089F21F /* HomeViewController.swift in Sources */,
+				D811D75B2444A6870089F21F /* QuestionViewController.swift in Sources */,
+				D8CD3BB7247277AB00DD8EA6 /* QuestionWriteViewController.swift in Sources */,
+				D811D76C2449A7B60089F21F /* Comment.swift in Sources */,
+				D811D754244487460089F21F /* Company.swift in Sources */,
+				D8CD3BBB2472798C00DD8EA6 /* Question.swift in Sources */,
+				D811D761244705470089F21F /* CommentReviewViewController.swift in Sources */,
+				D8CD3BB42472660A00DD8EA6 /* ItemCollectionViewCell.swift in Sources */,
+				D811D765244714CD0089F21F /* ReviewWriteViewController.swift in Sources */,
+				D8CD3BB92472785400DD8EA6 /* CommentQuestionViewController.swift in Sources */,
+				D8CD3BBD2474FC4D00DD8EA6 /* ImageViewerViewController.swift in Sources */,
+				D811D769244968910089F21F /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,16 +464,21 @@
 		};
 		D811D7472442D34F0089F21F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81427350587F19787ADEAC19 /* Pods-Career Share.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Career Share/Career Share.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LB4A8D9873;
 				INFOPLIST_FILE = "Career Share/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.takuyanamba.Career-Share";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.takuyanamba.Career-Share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,16 +486,21 @@
 		};
 		D811D7482442D34F0089F21F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B820A112F3FFD3C6594C029F /* Pods-Career Share.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Career Share/Career Share.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LB4A8D9873;
 				INFOPLIST_FILE = "Career Share/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.takuyanamba.Career-Share";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.takuyanamba.Career-Share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +528,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8CD3BBE24791E2F00DD8EA6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8CD3BBF24791E3000DD8EA6 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8CD3BBE24791E2F00DD8EA6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D811D72A2442D34A0089F21F /* Project object */;
 }
